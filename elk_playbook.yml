@@ -1,0 +1,57 @@
+---
+
+  - name: elk_playbook
+    hosts: elk
+    become: true
+    tasks: 
+
+    - name: Increase virtual memory
+      command: sysctl -w vm.max_map_count=262144
+      # Use sysctl module
+    - name: Use more memory
+      sysctl:
+        name: vm.max_map_count
+        value: "262144"
+        state: present
+        reload: yes
+      # Use docker_co
+
+    - name: Install apache
+      apt:
+       name: apache2
+      # state: present
+       state: absent       
+
+    - name: docker.io
+      apt: 
+       force_apt_get: yes
+       update_cache: yes
+       name: docker.io
+       state: present
+
+    - name: Install Python
+      apt:  
+       force_apt_get: yes
+       name: python3-pip
+       state: present
+    
+    - name: Install Docker Python Module
+      pip:
+       name: docker
+       state: present
+
+    - name: SEBP
+      docker_container:
+        name: sebp_container
+        image: sebp/elk:761
+        state: started 
+        restart_policy: always
+        published_ports: 
+                      - 5601:5601
+                      - 9200:9200
+                      - 5044:5044
+ 
+    - name: enable docker service
+      systemd:
+       name: docker
+       enabled: yes
