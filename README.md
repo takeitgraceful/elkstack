@@ -149,3 +149,12 @@ Edit the playbook to target a different range of hosts.
 http://20.98.219.103:5601/app/kibana#/home
 
 As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc:
+
+$ cd /etc/ansible
+$ mkdir files
+# Clone Repository + IaC Files
+$ git clone https://github.com/takeitgraceful/elkstack.git
+# Move Playbooks and hosts file Into `/etc/ansible`
+$ cp elkstack/*.yml .
+$ ansible-playbook [playbook name]
+
