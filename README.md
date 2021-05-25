@@ -138,6 +138,7 @@ ansible-playbook [playbook name]
 
 
 -  Which file do you update to make Ansible run the playbook on a specific machine:
+
 /etc/ansible/hosts
 
 -  How do I specify which machine to install the ELK server on versus which to install Filebeat on:
@@ -149,6 +150,14 @@ Edit the playbook to target a different range of hosts.
 http://20.98.219.103:5601/app/kibana#/home
 
 As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc:
+
+Install git:
+
+apt-get update
+apt-get upgrade -y
+apt-get install -y git
+
+Clone git repository:
 
 $ cd /etc/ansible
 $ mkdir files
