@@ -151,11 +151,11 @@ http://20.98.219.103:5601/app/kibana#/home
 
 As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc:
 
-Install git:\
+Install git:&nbsp;
 
-apt-get update\
-apt-get upgrade -y\
-apt-get install -y git\
+apt-get update&nbsp;
+apt-get upgrade -y&nbsp;
+apt-get install -y git&nbsp;
 
 Clone git repository:
 
