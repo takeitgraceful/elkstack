@@ -122,10 +122,10 @@ ansible-playbook [playbook name]
 
 Here are the beat playbooks and config files: 
 
-[Filebeat Playbook](filebeat-config.yml)
-[Filebeat Playbook](filebeat-playbook.yml)
-[Metricbeat Playbook](metricbeat-config.yml)
-[Metricbeat Playbook](metricbeat-playbook.yml)
+1. [Filebeat Config Playbook](filebeat-config.yml)
+2. [Filebeat Playbook](filebeat-playbook.yml)
+3. [Metricbeat Config Playbook](metricbeat-config.yml)
+4. [Metricbeat Playbook](metricbeat-playbook.yml)
 
 
 Copy these to your docker container at:
