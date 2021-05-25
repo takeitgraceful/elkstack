@@ -68,6 +68,11 @@ The playbook implements the following tasks:
 4. Installs Docker
 5. Installing a custom SEBP/ELK container
 
+Here's a link to the ELK playbook:
+
+[ELK Playbook](elk_playbook.yml)
+
+
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
 '''
