@@ -163,6 +163,6 @@ Clone git repository:
 2. mkdir files
 3. git clone https://github.com/takeitgraceful/elkstack.git
 4. Move Playbooks and hosts file Into `/etc/ansible`
-5. elkstack/*.yml .
+5. cp elkstack/*.yml .
 6. ansible-playbook [playbook name]
 
