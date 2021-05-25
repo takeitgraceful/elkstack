@@ -111,6 +111,32 @@ SSH into the control node and follow the steps below:
 
 - Which file is the playbook? Where do you copy it:
 
+Here's the ELK playbook: 
+[ELK Playbook](elk_playbook.yml)
+
+Copy this to your docker container.
+
+Run it with 
+
+ansible-playbook [playbook name]
+
+Here are the beat playbooks and config files: 
+
+[Filebeat Playbook](filebeat-config.yml)
+[Filebeat Playbook](filebeat-playbook.yml)
+[Metricbeat Playbook](metricbeat-config.yml)
+[Metricbeat Playbook](metricbeat-playbook.yml)
+
+
+Copy these to your docker container at:
+
+/etc/ansible/roles
+
+Run it with 
+
+ansible-playbook [playbook name]
+
+
 -  Which file do you update to make Ansible run the playbook on a specific machine:
 /etc/ansible/hosts
 
