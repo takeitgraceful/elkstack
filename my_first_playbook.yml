@@ -1,0 +1,9 @@
+---
+  - name: my first playbook
+    hosts: webservers
+    become: true
+    tasks:
+    - name: Install apache
+      apt:
+       name: apache2
+       state: absent

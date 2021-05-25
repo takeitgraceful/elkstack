@@ -1,0 +1,43 @@
+---
+
+  - name: my first playbook
+    hosts: webservers
+    become: true
+    tasks: 
+
+    - name: Install apache
+      apt:
+       name: apache2
+      # state: present
+       state: absent       
+
+    - name: docker.io
+      apt: 
+       force_apt_get: yes
+       update_cache: yes
+       name: docker.io
+       state: present
+
+    - name: Install Python
+      apt:  
+       force_apt_get: yes
+       name: python3-pip
+       state: present
+    
+    - name: Install Docker Python Module
+      pip:
+       name: docker
+       state: present
+
+    - name: DVWA
+      docker_container:
+        name: dvwa_container
+        image: cyberxsecurity/dvwa
+        state: started 
+        restart_policy: always
+        published_ports: 80:80
+ 
+    - name: enable docker service
+      systemd:
+       name: docker
+       enabled: yes
