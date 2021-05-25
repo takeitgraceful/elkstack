@@ -76,9 +76,8 @@ Here's a link to the ELK playbook:
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
 '''
-azadmin@Web-2:~$ sudo docker ps
-CONTAINER ID   IMAGE                 COMMAND      CREATED      STATUS       PORTS                NAMES
-b92a48475dcc   cyberxsecurity/dvwa   "/main.sh"   9 days ago   Up 3 hours   0.0.0.0:80->80/tcp   dvwa_container
+CONTAINER ID   IMAGE          COMMAND                  CREATED      STATUS       PORTS                                                                              NAMES
+8ebc1f7e617f   sebp/elk:761   "/usr/local/bin/star…"   5 days ago   Up 4 hours   0.0.0.0:5044->5044/tcp, 0.0.0.0:5601->5601/tcp, 0.0.0.0:9200->9200/tcp, 9300/tcp   sebp_container
 '''
 
 ### Target Machines & Beats
@@ -86,7 +85,6 @@ This ELK server is configured to monitor the following machines:
 1. Web 1
 2. Web 2
 3. Web 3
-
 
 We have installed the following Beats on these machines:
 
