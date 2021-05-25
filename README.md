@@ -153,17 +153,16 @@ As a **Bonus**, provide the specific commands the user will need to run to downl
 
 Install git:&nbsp;
 
-apt-get update&nbsp;
-apt-get upgrade -y&nbsp;
-apt-get install -y git&nbsp;
+1. apt-get update
+2. apt-get upgrade -y
+3. apt-get install -y git
 
 Clone git repository:
 
-$ cd /etc/ansible
-$ mkdir files
-# Clone Repository + IaC Files
-$ git clone https://github.com/takeitgraceful/elkstack.git
-# Move Playbooks and hosts file Into `/etc/ansible`
-$ cp elkstack/*.yml .
-$ ansible-playbook [playbook name]
+1. cd /etc/ansible
+2. mkdir files
+3. git clone https://github.com/takeitgraceful/elkstack.git
+4. Move Playbooks and hosts file Into `/etc/ansible`
+5. elkstack/*.yml .
+6. ansible-playbook [playbook name]
 
