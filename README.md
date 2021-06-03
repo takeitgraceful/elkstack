@@ -3,7 +3,7 @@
 The files in this repository were used to configure the network depicted below.
 
 
-![ELK Stack Network Diagram](images/elk_stack_network.png)
+![ELK Stack Network Diagram](Diagrams/elk_stack_network.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the elk_playbook.yml file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -70,7 +70,7 @@ The playbook implements the following tasks:
 
 Here's a link to the ELK playbook:
 
-[ELK Playbook](elk_playbook.yml)
+[ELK Playbook](Ansible/elk_playbook.yml)
 
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
@@ -112,7 +112,7 @@ SSH into the control node and follow the steps below:
 - Which file is the playbook? Where do you copy it:
 
 Here's the ELK playbook: 
-[ELK Playbook](elk_playbook.yml)
+[ELK Playbook](Ansible/elk_playbook.yml)
 
 Copy this to your docker container.
 
@@ -122,10 +122,10 @@ ansible-playbook [playbook name]
 
 Here are the beat playbooks and config files: 
 
-1. [Filebeat Config Playbook](filebeat-config.yml)
-2. [Filebeat Playbook](filebeat-playbook.yml)
-3. [Metricbeat Config Playbook](metricbeat-config.yml)
-4. [Metricbeat Playbook](metricbeat-playbook.yml)
+1. [Filebeat Config Playbook](Ansible/filebeat-config.yml)
+2. [Filebeat Playbook](Ansible/filebeat-playbook.yml)
+3. [Metricbeat Config Playbook](Ansible/metricbeat-config.yml)
+4. [Metricbeat Playbook](Ansible/metricbeat-playbook.yml)
 
 
 Copy these to your docker container at:
