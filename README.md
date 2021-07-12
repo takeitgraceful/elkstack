@@ -137,7 +137,7 @@ Run it with
 ansible-playbook [playbook name]
 
 
--  Which file do you update to make Ansible run the playbook on a specific machine:
+-  Which file do I update to make Ansible run the playbook on a specific machine:
 
 /etc/ansible/hosts
 
@@ -149,7 +149,7 @@ Edit the playbook to target a different range of hosts.
 
 http://20.98.219.103:5601/app/kibana#/home
 
-As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc:
+- What are the specific commands the user will need to run to download the playbook, update the files, etc:
 
 Install git:&nbsp;
 
